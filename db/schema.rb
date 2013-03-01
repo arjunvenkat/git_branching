@@ -13,6 +13,12 @@
 
 ActiveRecord::Schema.define(:version => 20130301222036) do
 
+  create_table "branches", :force => true do |t|
+    t.integer  "leaves"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "videos", :force => true do |t|
     t.string   "url"
     t.datetime "created_at", :null => false
