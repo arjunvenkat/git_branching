@@ -1,5 +1,7 @@
 GitBranching::Application.routes.draw do
   resources :branches
+  resources :videos
+
 
 
   # The priority is based upon order of creation:
